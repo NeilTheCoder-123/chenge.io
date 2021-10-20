@@ -22,11 +22,15 @@ canvas{
     border: 10px greenyellow solid;
     border-radius: 1rem;
     box-shadow: 1px 1px 38px black;
-    margin-top: 1.5rem;
+    margin-top: 5.5rem;
 }
 
 video{
     border: 10px greenyellow solid;
     border-radius: 1rem;
     margin-left: 1rem;
+}
+
+.btn-success{
+    font-size: large;
 }

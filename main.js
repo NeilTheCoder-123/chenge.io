@@ -5,6 +5,7 @@ leftWristY = 0;
 rightWristX = 0;
 rightWristY = 0;
 difference = 0;
+shape = "";
 
 function setup(){
     video = createCapture(VIDEO);
@@ -16,12 +17,12 @@ function setup(){
 }
 
 function modelLoaded(){
-    console.log("PoseNet is loaded....");
+    //console.log("PoseNet is loaded....");
 }
 
 function gotPoses(results){
     if (results.length > 0){
-        console.log(results);
+        //console.log(results);
         noseX = (results[0].pose.nose.x)-150;
         noseY = (results[0].pose.nose.y)-100;
         leftWristX = results[0].pose.leftWrist.x;
@@ -37,4 +38,22 @@ function draw(){
     fill("#03fca5");
     stroke("#09ab72");
     square(noseX, noseY, difference);
+    console.log(shape);
+    if (shape == "square"){
+        square(noseX, noseY, difference);
+    } else if (shape == "circle"){
+        erase(0, 0);
+        background("white");
+        fill("#03fca5");
+        stroke("#09ab72");
+        circle(noseX, noseY, difference);
+    }
+}
+
+function square1(){
+    shape = "square";
+}
+
+function circle1(){
+    shape = "circle";
 }

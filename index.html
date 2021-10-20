@@ -8,8 +8,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
@@ -30,7 +31,12 @@
           <center>
               <h1 style="font-size: xxx-large; font-family: 'ZCOOL KuaiLe', cursive; color: white;">chenge.io</h1>
               <code style="font-size: x-large;">Powered by - PoseNet</code>
-              <h2 style="font-size: x-large; font-family: 'Rampart One', cursive; color: white;"><kbd style="font-size: xx-large;">chenge.io</kbd> changes the size and position of a square in realtime.</h2>
+              <h2 style="font-size: x-large; font-family: 'Rampart One', cursive; color: white;"><kbd style="font-size: xx-large;">chenge.io</kbd> changes the size and position of a square/circle in realtime.</h2>
+              <div style="margin-bottom: 10px;">
+              <span><button onclick="square1();" class="btn btn-success">Square</button></span>
+              <span style="color: white; font-size: large;">|or|</span>
+              <span><button onclick="circle1();" class="btn btn-success">Circle</button></span>
+              </div>
 
               <div style="margin-left: 20px; margin-right: 20px; text-align: center;">
               <div class="bg-success details" data-toggle="collapse" data-target="#debate">
